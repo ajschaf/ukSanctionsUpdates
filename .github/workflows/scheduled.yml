@@ -3,7 +3,7 @@ name: Fetch latest data, commit
 on:
   repository_dispatch:
   schedule:
-    - cron:  '*/30 14-23,0-1 * * 1-5'
+    - cron:  '00 12 * * *'
 
 jobs:
   scheduled:
@@ -26,5 +26,5 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install -r requirements.txt
-    - name: Fetch, update and commit FARA data
+    - name: Fetch, update and commit sanctions data
       run: . update_and_commit_all.sh
