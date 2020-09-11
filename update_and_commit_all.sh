@@ -17,6 +17,6 @@ fetch_and_sort_and_commit () {
         || true
 }
 
-git config --global user.email "FARAbot@example.com"
-git config --global user.name "FARAbot"
+git config --global user.email "SanctionsBot@example.com"
+git config --global user.name "SanctionsBot"
 fetch_and_sort_and_commit
