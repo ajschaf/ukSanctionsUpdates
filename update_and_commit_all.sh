@@ -5,7 +5,7 @@ fetch_and_sort_and_commit () {
     git add ConList.csv
     git add InvBan.csv
     git commit -m "Updated" && \
-    git push -q origin main \
+    git push -q origin master \
     || true
 }
 
