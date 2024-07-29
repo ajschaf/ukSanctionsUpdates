@@ -2,8 +2,8 @@ name: Fetch latest data, commit
 
 on:
   repository_dispatch:
-  schedule:
-    - cron:  '00 12 * * *'
+#  schedule:
+#    - cron:  '00 12 * * *'
 
 jobs:
   scheduled:
